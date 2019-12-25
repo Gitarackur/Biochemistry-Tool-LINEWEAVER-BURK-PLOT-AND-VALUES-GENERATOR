@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title></title>
+    
+	<link rel="stylesheet" href="./css/style0.css" />
+	<link rel="stylesheet" href="./css/style1.css" />
+	<meta name="viewport"  content="width=device-width, initial-scale=1.0">
+	<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="//font.googleapis.com/css?family=Open+Sans"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<body>
+    <div class="loader">
+        <h1>LINE WEAVER-BURK PLOT GENERATOR</h1>
+        <img src="./images/loazer.gif"/>
+    </div>
+
+    <h1 class="h1">LINE WEAVER-BURK PLOT GENERATOR</h1>
+
+    <div id="MainBody">
+
+
+        <div id="MainContainer">
+
+          
+
+            <a class="instructionsBar"> Instructions:<i class="fas fa-bars"></i></a> 
+            <ul class="instructions">
+                <li>Input your substrate concentration and velocity values</li>
+                <li>Press enter on your keyboard to obtain the output</li>
+            </ul>   
+            
+                
+        
+
+
+            <div id="container">
+                <div class="substrate">
+                    <h1>SUBSTRATE  <br/>  CONCENTRATION</h1>
+                    <input type="text" placeholder=" input substrate conc here" class="inputSub"/>
+                    <div class="mainSub">
+                        
+                        
+                    </div>
+                </div>
+        
+                <div class="velocity">
+                    <h1>VELOCITY<br/> OF ENZYME</h1>
+                    <input type="text" placeholder="input velocity here" class="inputVel"/>
+                    <div class="mainVel">
+                        
+                    </div>
+                </div>
+        
+        
+            </div>
+        
+        
+            <div id="result">
+                <div class="REcS">
+                    <h1>1/[S](x-axis)</h1>
+                </div>
+
+                <div class="REcV">
+                    <h1>1/V(y-axis)</h1>
+                </div>
+            </div>
+
+
+            <button class="slopee">CLICK TO VIEW SLOPE OF GRAPH</button>
+            <div class="showSlope"></div>
+        
+        </div>
+    
+       
+    
+    
+    
+        <!-- <p class="p1">LINEWEAVER-BURK RECIPROCAL PLOT</p> -->
+        <div id="GraphContainer">
+            <h1 id="Gtext">GRAPH</h1>
+            <canvas id="graph"></canvas>
+        </div>
+
+        
+    </div>
+
+    
+    
+
+
+
+    <script src="./js/script.js"></script>
+    <script src="./js/script1.js"></script>
+</body>
+</html>
